@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ackley Hartnett Rep Portal</title>
+  <style>
+    body { font-family: Arial, sans-serif; background-color: #f8f9fa; color: #001f3f; text-align: center; margin:0; padding:0; }
+    header { background-color:#001f3f; color:white; padding:1.5rem; }
+    .container { max-width:800px; margin:2rem auto; padding:2rem; background:white; border-radius:12px; box-shadow:0 4px 8px rgba(0,0,0,0.1); display:none; }
+    input[type="password"] { padding:0.5rem; font-size:1rem; margin-top:1rem; }
+    button { background-color:#001f3f; color:white; border:none; padding:0.5rem 1rem; margin-left:0.5rem; cursor:pointer; border-radius:6px; }
+    .folder { text-align:left; margin-top:2rem; }
+    .folder h2 { border-bottom:2px solid #001f3f; padding-bottom:0.5rem; }
+    .folder ul { list-style:none; padding:0; }
+    .folder li { margin:0.5rem 0; }
+    a { color:#001f3f; text-decoration:none; }
+    a:hover { text-decoration:underline; }
+  </style>
+</head>
+<body>
+  <header><h1>Ackley Hartnett Rep Portal</h1></header>
+
+  <div id="login" class="container" style="display:block;">
+    <h2>Enter Password</h2>
+    <input type="password" id="passwordInput" placeholder="Password"/>
+    <button onclick="checkPassword()">Login</button>
+    <p id="error" style="color:red; display:none;">Incorrect password.</p>
+  </div>
+
+  <div id="portal" class="container">
+    <h2>Welcome, Representatives!</h2>
+    <p>Here are your resources:</p>
+    <div class="folder">
+      <h2>📂 Product PDFs</h2>
+      <ul>
+        <li><a href="https://drive.google.com/uc?export=download&id=1gjIWaEN1QxoT_Nc7sZk8pJz2BfG7HIIO" target="_blank">Merger Page</a></li>
+        <li><a href="https://drive.google.com/uc?export=download&id=1K9jR5GxmNNXA0b9Og8iQ13_oYaA2NeWW" target="_blank">Adjustable Angle Ramp</a></li>
+        <li><a href="https://drive.google.com/uc?export=download&id=1lcPguQz8waaddWlNGomW-sSuhpB0cCWM" target="_blank">ARC</a></li>
+        <li><a href="https://drive.google.com/uc?export=download&id=1HVqBU2CtGb4A-7azgzVH1tJSg99MQgwF" target="_blank">Cantilever Ink</a></li>
+        <li><a href="https://drive.google.com/uc?export=download&id=1c2HeFATc9nTY_UyBdrQLSYo2VhusRlYJ" target="_blank">Delta Laser</a></li>
+        <li><a href="https://drive.google.com/uc?export=download&id=1WavdXknajxMlmsJ9DABs6fNs7YMEpIkv" target="_blank">Delta UV</a></li>
+        <li><a href="https://drive.google.com/uc?export=download&id=1MkR9z__s3M4KG8KHNSvrUELpI-COruwj" target="_blank">H Track Laser</a></li>
+        <li><a href="https://drive.google.com/uc?export=download&id=1srSAAIaHb7aHsu7fZhJuKsIJV9C4o4GQ" target="_blank">IBM Ink</a></li>
+        <li><a href="https://drive.google.com/uc?export=download&id=1grziqibZEBfaAf-NbGbs3DRkn8gVJ4d4" target="_blank">IBM Laser</a></li>
+        <li><a href="https://drive.google.com/uc?export=download&id=1p-Qvq4_bwTGr8kziIVGysSDzuku4jM89" target="_blank">Ink Viscosity</a></li>
+        <li><a href="https://drive.google.com/uc?export=download&id=1CUX7c85VqlHNSzjYmzZzB-rBGRZZaelK" target="_blank">LDI</a></li>
+        <li><a href="https://drive.google.com/uc?export=download&id=1NFDZDaWLJMWc7G4A0LJ2bkVEpbcbhTTF" target="_blank">R and D Laser Drill</a></li>
+        <li><a href="https://drive.google.com/uc?export=download&id=10MMKJ8JW7V3jbo6wMHI2QaiUtQDHy60I" target="_blank">VIP Ink</a></li>
+        <li><a href="https://drive.google.com/uc?export=download&id=1GTcoWcIOeg8OjEpNa8tplGquOl0o_PtX" target="_blank">VIP Laser Drill</a></li>
+        <li><a href="https://drive.google.com/uc?export=download&id=1fT_bbgJs405s7ho6uzg__0ZgnZ5qu4lk" target="_blank">VIP UV</a></li>
+        <li><a href="https://drive.google.com/uc?export=download&id=1gm4YTb9I0allOYicIAzGsLrfawUUuIEq" target="_blank">Delta Ink</a></li>
+        <li><a href="https://drive.google.com/uc?export=download&id=1Rj0tvBgoeKjLlNHnFkMLePt08W2nZtOl" target="_blank">Delta C02</a></li>
+        <li><a href="https://drive.google.com/uc?export=download&id=1ZkSv0X_OygGdosi0m_Jgod9odBAuRK33" target="_blank">IBM C02</a></li>
+        <li><a href="https://drive.google.com/uc?export=download&id=14hWJHiRM6Yms1u1bj9haxi0Q8CA8Md22" target="_blank">H Track C02</a></li>
+        <li><a href="https://drive.google.com/uc?export=download&id=1_j1-non4gpGrabHCEZP-N7YgjgtASQWe" target="_blank">H Track Ink</a></li>
+      </ul>
+    </div>
+
+    <div class="folder">
+      <h2>🎥 Training Videos</h2>
+      <ul>
+        <li><a href="https://www.youtube.com/watch?v=xxxxxxx" target="_blank">Sales Training Video</a></li>
+        <li><a href="https://vimeo.com/xxxxxxx" target="_blank">Product Demo Video</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <script>
+    const correctPassword = "AH2025!rep";
+    function checkPassword() {
+      const input = document.getElementById("passwordInput").value;
+      if (input === correctPassword) {
+        document.getElementById("login").style.display = "none";
+        document.getElementById("portal").style.display = "block";
+      } else {
+        document.getElementById("error").style.display = "block";
+      }
+    }
+  </script>
+</body>
+</html>
